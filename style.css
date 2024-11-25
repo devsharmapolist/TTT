@@ -1,0 +1,129 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#806b26, #5E1675, #5E1675, #806b26);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.container {
+    margin-top: 1%;
+    width: 40vw;
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFD23F;
+    gap: 30px;
+    padding-top: 30px;
+}
+
+#winner {
+    height: 100vh;
+    width: 40;
+    color: #FFD23F;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+}
+
+#ii {
+    font-size: 5rem;
+    position: relative;
+    top: 170px;
+    left: 1px;
+}
+
+i {
+    color: #FFD23F;
+}
+
+#ii:hover {
+    cursor: pointer;
+    color: #FFD23F;
+}
+
+#restart {
+    font-size: 2rem;
+    border: none;
+    background-color: #FFD23F;
+    padding: 10px 10px;
+    color: #806b26;
+    border-radius: 15px;
+    font-weight: 700;
+    box-shadow: 1px 1px 2px #806b26;
+    margin-top: 40px;
+}
+
+#restart:hover {
+    box-shadow: 2px 3px 3px #FFD23F;
+    color: #5E1675
+}
+
+.game {
+    height: 70%;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+
+}
+
+.box {
+    width: 30%;
+    height: 30%;
+    border-radius: 20px;
+    box-shadow: 2px 3px 3px #FFD23F;
+    border: none;
+
+    font-size: 60px;
+    font-weight: 700;
+    color: #5E1675;
+}
+
+.box:hover {
+    box-shadow: 4px 4px 5px #FFD23F;
+}
+
+#res {
+    text-align: center;
+    height: 25vh;
+    margin-top: 30px;
+}
+
+#resetbtn {
+    font-size: 2rem;
+    border: none;
+    background-color: #FFD23F;
+    padding: 10px 10px;
+    color: #806b26;
+    border-radius: 15px;
+    font-weight: 700;
+    box-shadow: 1px 1px 2px #806b26;
+}
+
+#resetbtn:hover {
+    box-shadow: 2px 3px 3px #FFD23F;
+    color: #5E1675
+}
+
+
+button {
+    cursor: pointer;
+}

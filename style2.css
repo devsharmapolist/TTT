@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#806b26, #5E1675, #5E1675, #806b26);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    margin-top: 1%;
+    width: 40vw;
+    display: flex;
+    flex-direction: column; /* Stack title and game vertically */
+    align-items: center;
+    color: #FFD23F;
+    gap: 20px; /* Space between title and game */
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.game {
+    width: 100%; /* Full width of the container */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.box {
+    width: 30%;
+    height: 100px; /* Set a fixed height for visibility */
+    border-radius: 20px;
+    box-shadow: 2px 3px 3px #FFD23F;
+    border: none;
+    font-size: 60px;
+    font-weight: 700;
+    color: #5E1675;
+}
+
+.box:hover {
+    box-shadow: 4px 4px 5px #FFD23F;
+}
+
+#res {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#resetbtn {
+    font-size: 2rem;
+    border: none;
+    background-color: #FFD23F;
+    padding: 10px 10px;
+    color: #806b26;
+    border-radius: 15px;
+    font-weight: 700;
+}
+
+/* Responsive design starts here */
+
+/* Tablets and below */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .container {
+        width: 60vw;
+    }
+
+    .game {
+        width: 80%; /* Adjust the game width */
+    }
+
+    .box {
+        font-size: 50px;
+        width: 28%;
+        height: 80px; /* Adjust height for smaller screens */
+    }
+}
+
+/* Mobile Landscape */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        width: 80vw;
+    }
+
+    .box {
+        font-size: 40px;
+        width: 26%;
+        height: 70px; /* Further adjust height */
+    }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        width: 90vw;
+    }
+
+    .box {
+        font-size: 30px;
+        width: 28%;
+        height: 60px; /* Small height for mobile */
+    }
+
+    #resetbtn {
+        font-size: 1.5rem;
+        padding: 8px;
+    }
+}
